@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - uses: actions/checkout@v4
+      
       - uses: antithesishq/bombadil-action@8c2027c9ff07c56f208c61fee60675b5faf01f8a
         with:
           origin: https://en.wikipedia.org
