@@ -12,6 +12,7 @@ jobs:
         with:
           origin: https://en.wikipedia.org
           specification: ./specification.ts
+          version: 0.7.2
           time-limit: 1m
           exit-on-violation: true
           output-path: bombadil-output
