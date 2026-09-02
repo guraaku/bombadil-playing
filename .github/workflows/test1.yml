@@ -19,12 +19,12 @@ jobs:
           exit-on-violation: true
           output-path: bombadil-output
 
+      - name: Inspect Bombadil output
+        if: always()
+        run: npx --yes @antithesishq/bombadil@0.7.2 browser inspect bombadil-output
+
       - uses: actions/upload-artifact@v4
         if: always()
         with:
           name: bombadil-output
           path: bombadil-output
-
-      - name: Inspect Bombadil output
-        if: always()
-        run: bombadil browser inspect bombadil-output
