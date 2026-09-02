@@ -18,3 +18,9 @@ jobs:
           time-limit: 1m
           exit-on-violation: true
           output-path: bombadil-output
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bombadil-output
+          path: bombadil-output
