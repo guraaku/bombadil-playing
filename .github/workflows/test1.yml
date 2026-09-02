@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: antithesishq/bombadil-action@v2
+      - uses: antithesishq/bombadil-action@8c2027c9ff07c56f208c61fee60675b5faf01f8a
         with:
           origin: https://en.wikipedia.org
           specification: ./specification.ts
