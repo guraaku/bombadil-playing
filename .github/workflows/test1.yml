@@ -24,3 +24,7 @@ jobs:
         with:
           name: bombadil-output
           path: bombadil-output
+
+      - name: Inspect Bombadil output
+        if: always()
+        run: bombadil browser inspect bombadil-output
