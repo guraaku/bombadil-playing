@@ -1,0 +1,17 @@
+name: Bombadil Test 1
+
+on:
+  workflow_dispatch:
+
+jobs:
+  bombadil:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: antithesishq/bombadil-action@v2
+        with:
+          origin: https://en.wikipedia.org
+          specification: ./specification.ts
+          time-limit: 1m
+          exit-on-violation: true
+          output-path: bombadil-output
